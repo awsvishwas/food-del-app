@@ -1,0 +1,28 @@
+.food-display{
+    margin-top: 30px;
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+    
+}
+
+.food-display-list{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 30px;
+    row-gap: 50px;
+}
+
+@media (max-width:1050px) {
+
+    .food-display-list{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .food-display-list::-webkit-scrollbar{
+        display: none;
+    }
+}

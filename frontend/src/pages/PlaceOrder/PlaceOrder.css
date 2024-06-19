@@ -1,0 +1,39 @@
+.order{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: start;gap: 50px;
+}
+
+.title{
+    font-size: 30px;margin-bottom: 50px;font-weight: 600;
+}
+
+.order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+
+.order-left input{
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px;border-radius: 4px;outline-color: tomato;
+    border: 1px solid #c5c5c5;
+}
+
+.order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+
+.order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+@media (max-width:750px){
+    .order{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+}
